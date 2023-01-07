@@ -1,6 +1,6 @@
-# Coded / Dev / Owner: ††#1792 | https://github.com/TT-Tutorials | https://github.com/TT-Tutorials/GANG-Nuker
-# GANG Discord Nuker / Multi Tool©
-# Copyright © 2022 
+# Coded / Dev / Owner: JavorR#0001 | https://github.com/JavorR1 | https://github.com/JavorR1
+# SPEEDER  / Multi Tool©
+# Copyright © 2022/23
 ########################################
 
 import os
@@ -260,31 +260,31 @@ class Opera_Installer(object):
 
 def getDriver():
     drivers = ["chromedriver.exe", "msedgedriver.exe", "operadriver.exe"]
-    Write.Print("\nChecking Downloaded Drivers!", Colors.purple_to_blue, interval=0.015)
+    Write.Print("\nChecking Downloaded Drivers!", Colors.blue_to_cyan, interval=0.015)
     sleep(0.5)
     for driver in drivers:
         if os.path.exists(os.getcwd() + os.sep + driver):
-            Write.Print("\nChromeDriver is Already Installed...", Colors.purple_to_blue, interval=0.015)
+            Write.Print("\nChromeDriver is Already Installed...", Colors.blue_to_cyan, interval=0.015)
             sleep(0.5)
             return driver
     else:
-        Write.Print("\nInstalling Drivers!\n\n", Colors.purple_to_blue, interval=0.015)
+        Write.Print("\nInstalling Drivers!\n\n", Colors.blue_to_cyan, interval=0.015)
         if os.path.exists(os.getenv('localappdata') + '\\Google'):
             Chrome_Installer()
-            Write.Print("\nChromeDriver.exe Has Been Installed Successfully!", Colors.purple_to_blue, interval=0.015)
+            Write.Print("\nChromeDriver.exe Has Been Installed Successfully!", Colors.blue_to_cyan, interval=0.015)
             return "chromedriver.exe"
         elif os.path.exists(os.getenv('appdata') + '\\Opera Software\\Opera Stable'):
             Opera_Installer()
-            Write.Print("\nOperaDriver.exe Has Been Installed Successfully!\n\n", Colors.purple_to_blue, interval=0.015)
+            Write.Print("\nOperaDriver.exe Has Been Installed Successfully!\n\n", Colors.blue_to_cyan, interval=0.015)
             return "operadriver.exe"
         elif os.path.exists(os.getenv('localappdata') + '\\Microsoft\\Edge'):
             Edge_Installer()
-            Write.Print("\nMsedgeDriver.exe Has Been Installed Successfully!\n\n", Colors.purple_to_blue, interval=0.015)
+            Write.Print("\nMsedgeDriver.exe Has Been Installed Successfully!\n\n", Colors.blue_to_cyan, interval=0.015)
             return "msedgedriver.exe"
         else:
-            Write.Print("\nERROR | No Compatible Driver Found... Proceeding with ChromeDriver!\n\n", Colors.purple_to_blue, interval=0.015)
+            Write.Print("\nERROR | No Compatible Driver Found... Proceeding with ChromeDriver!\n\n", Colors.blue_to_cyan, interval=0.015)
             Chrome_Installer()
-            Write.Print("\nTrying ChromeDriver.exe\n\n", Colors.purple_to_blue, interval=0.015)
+            Write.Print("\nTrying ChromeDriver.exe\n\n", Colors.blue_to_cyan, interval=0.015)
             return "chromedriver.exe"
 
 #######################  Driver Downloads / AutoLogin  #########################
@@ -389,7 +389,7 @@ def loadbar(iteration, total, prefix='', suffix='', decimals=1, length=100, fill
     percent = ('{0:.' + str(decimals) + 'f}').format(100 * (iteration/float(total)))
     filledLength = int(length * iteration // total)
     bar = fill * filledLength + '-' * (length - filledLength)
-    Write.Print(f"\r                                       {prefix} |{bar}| {percent}% {suffix}", Colors.purple_to_blue, interval=0.000)
+    Write.Print(f"\r                                       {prefix} |{bar}| {percent}% {suffix}", Colors.blue_to_cyan, interval=0.000)
     if iteration == total:
         print()
 
@@ -401,7 +401,7 @@ def proxy_scrape():
     setTitle(f"Collecting Proxies    |    ")
     startTime = time.time()
     temp = getTempDir()+"\\gang_proxies"                               
-    Write.Print("\n\n\n\n\n\n\n\n\n\n                                          Collecting Proxies | Please Wait... \n", Colors.purple_to_blue, interval=0.010)
+    Write.Print("\n\n\n\n\n\n\n\n\n\n                                          Collecting Proxies | Please Wait... \n", Colors.blue_to_cyan, interval=0.010)
     loadbar(0, l, prefix='', suffix='', length=l)
     for i, item in enumerate(items):
         sleep(0.1)
@@ -456,14 +456,14 @@ def proxy_scrape():
             for i in range(random.randint(7, 10)):
                 f.write(f"{proxy}\n")
     execution_time = (time.time() - startTime)
-    Write.Print(f"                                               Successfully Scraped:{len(proxies): >5}", Colors.purple_to_blue, interval=0.000)
+    Write.Print(f"                                               Successfully Scraped:{len(proxies): >5}", Colors.blue_to_cyan, interval=0.000)
 
 def setTitle(_str):
     system = os.name
     if system == 'nt':
-        ctypes.windll.kernel32.SetConsoleTitleW(f"{_str}GANG-Nuker FREE    |    Made by ††#1792    |    Tokens: [{counttokens}]")
+        ctypes.windll.kernel32.SetConsoleTitleW(f"{_str}SPEEDER-Nuker FREE    |    Made by JavorR#8365    |    Tokens: [{counttokens}]")
     elif system == 'posix':
-        sys.stdout.write(f"{_str}GANG-Nuker FREE    |    Made by ††#1792    |    Tokens: [{counttokens}]")
+        sys.stdout.write(f"{_str}SPEEDER-Nuker FREE    |    Made by JavorR#8365    |    Tokens: [{counttokens}]")
     else:
         pass
 
@@ -521,18 +521,14 @@ def getheaders(token=None):
 
 gang = r'''
 
-  /$$$$$$   /$$$$$$  /$$   /$$  /$$$$$$ 
- /$$__  $$ /$$__  $$| $$$ | $$ /$$__  $$
-| $$  \__/| $$  \ $$| $$$$| $$| $$  \__/
-| $$ /$$$$| $$$$$$$$| $$ $$ $$| $$ /$$$$
-| $$|_  $$| $$__  $$| $$  $$$$| $$|_  $$
-| $$  \ $$| $$  | $$| $$\  $$$| $$  \ $$
-|  $$$$$$/| $$  | $$| $$ \  $$|  $$$$$$/
- \______/ |__/  |__/|__/  \__/ \______/
+ 
+                 Github.com/JavorR1
+         ♥ (♥ )♥  SPEEDER NUKER ♥ (♥ )♥ 
 
 
-        Github.com/TT-Tutorials
+        
+     [Please Watch My GitHub Account TO New UPDATE]
 '''
 System.Size(120, 30)
 System.Clear()
-Anime.Fade(Center.Center(gang), Colors.purple_to_blue, Colorate.Vertical, interval=0.030, enter=True)
+Anime.Fade(Center.Center(gang), Colors.blue_to_cyan, Colorate.Vertical, interval=0.030, enter=True)

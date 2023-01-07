@@ -1,6 +1,6 @@
-# Coded / Dev / Owner: ††#9999 | https://github.com/TT-Tutorials | https://github.com/TT-Tutorials/GANG-Nuker
-# GANG Discord Nuker / Multi Tool©
-# Copyright © 2022
+# Coded / Dev / Owner: JavorR#0001 | https://github.com/JavorR1 | https://github.com/JavorR1
+# SPEEDER  / Multi Tool©
+# Copyright © 2022/23
 ########################################
 
 
