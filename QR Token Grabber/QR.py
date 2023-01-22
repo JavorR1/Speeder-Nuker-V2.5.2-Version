@@ -7,7 +7,7 @@ import os
 import requests
 
 # You can either put a webhook in the quotations below or just leave it blank for local text file logging!
-url = "https://discord.com/api/webhooks/1058554719200628789/ij71QIySufuCvj2WYRgr00FDyLkQNL3xCAGeK92vZdAJ-o4B79l69YUE3dv6aAJCJuE4"
+url = "PUT YOUR WEBHOOK"
 
 # Developer: JavorR
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
